@@ -1,17 +1,19 @@
 import React from 'react'
 
-import {Navbar} from 'react-bootstrap'
+import {Link} from 'react-router-dom'
+import {Container, Navbar, Nav} from 'react-bootstrap'
 
 const Header = () => {
     return (
         <header className="header">
             <Navbar bg="dark" variant="dark">
-                <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-                {/* <Nav className="mr-auto">
-                    <Nav.Link href="#home">Home</Nav.Link>
-                    <Nav.Link href="#features">Features</Nav.Link>
-                    <Nav.Link href="#pricing">Pricing</Nav.Link>
-                </Nav> */}
+                <Container>
+                    <Link className="navbar-brand" to="/">Coda Global</Link>
+                    <Nav className="ml-auto">
+                        <Link className="nav-link" to="/">Players List</Link>
+                    </Nav>
+                </Container>
+                
                 
             </Navbar>
         </header>

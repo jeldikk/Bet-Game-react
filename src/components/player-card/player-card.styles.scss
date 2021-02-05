@@ -1,0 +1,19 @@
+.player-card{
+    margin-top: 2px;
+    
+    cursor: pointer;
+
+    .selected{
+        color: green;
+        font-weight: bold;
+    }
+
+    .thumbnail-image{
+
+        img{
+            width: 35px;
+            height: 35px;
+        }
+        
+    }
+}

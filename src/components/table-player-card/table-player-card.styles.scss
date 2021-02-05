@@ -1,0 +1,70 @@
+.table-player-card {
+  width: 20vw;
+
+  border-radius: 5px;
+
+  margin: 20px;
+  padding: 10px;
+
+  &.winner{
+      border: 5px solid green;
+      margin: 10px;
+      width: 25vw;
+    //   height: 400px;
+
+      .status{
+          background-color: green;;
+      }
+  }
+
+  &.not-winner{
+      border: 2px solid red;
+      height: 300px;
+
+      .status{
+          background-color: red;
+      }
+  }
+  
+
+  .details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+
+    .image-container {
+      width: 40%;
+      img {
+        width: 70px;
+        height: 70px;
+      }
+    }
+
+    .description {
+      display: flex;
+      flex-direction: column;
+
+      .name{
+          font-weight: bold;
+      }
+    }
+  }
+
+  .score-details{
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 10px;
+
+      div{
+          text-align: center;
+          width: 50%;
+      }
+  }
+
+  .status{
+      margin-top: 20px;
+      text-align: center;
+      height: 30px;
+      
+  }
+}

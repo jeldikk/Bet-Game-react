@@ -1,0 +1,13 @@
+.players-info{
+
+    .players-info-arena{
+        display: flex;
+
+        .left-side-pane{
+            width: 20%;
+        }
+        .right-side-pane{
+            flex-grow: 1;
+        }
+    }
+}
